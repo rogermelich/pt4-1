@@ -1,0 +1,21 @@
+BasicBundle\Entity\llibre:
+    type: entity
+    table: null
+    repositoryClass: BasicBundle\Repository\llibreRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        autor:
+            type: string
+            length: 255
+        any:
+            type: integer
+            nullable: true
+    lifecycleCallbacks: {  }
