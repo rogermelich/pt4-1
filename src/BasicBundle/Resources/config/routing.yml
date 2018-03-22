@@ -1,3 +1,20 @@
-basic_homepage:
+Homepage:
     path:     /
     defaults: { _controller: BasicBundle:Default:index }
+
+Var:
+    path:     /var
+    defaults: { _controller: BasicBundle:Controlador:variable }
+    methods: [GET]
+
+About:
+    path:     /about
+    defaults: { _controller: BasicBundle:Controlador:about }
+
+Products:
+    path:     /products
+    defaults: { _controller: BasicBundle:Controlador:products }
+
+Store:
+    path:     /store
+    defaults: { _controller: BasicBundle:Controlador:store }
